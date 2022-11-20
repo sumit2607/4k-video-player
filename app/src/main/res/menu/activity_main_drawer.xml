@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single"
+        android:id="@+id/groupone">
+        <item
+            android:id="@+id/videofolder"
+            android:icon="@drawable/folder_closed_black_shape"
+            android:title="Video Folder's" />
+    <item
+        android:id="@+id/nav_music"
+        android:icon="@drawable/music"
+        android:title="Music Library" />
+        <item
+            android:id="@+id/favorite_video"
+            android:icon="@drawable/heart"
+            android:title="Favorite Video" />
+        <item
+            android:id="@+id/screen_mirroring"
+            android:icon="@drawable/screenmirroring"
+            android:title="Screen Mirroring" />
+        <item
+            android:id="@+id/adsblock"
+            android:icon="@drawable/adblock"
+            android:title="Ad Block" />
+    <item
+        android:id="@+id/nav_setting"
+        android:icon="@drawable/setting_icon"
+        android:title="Settings" />
+
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/grouptwo">
+        <item
+            android:id="@+id/shareapp"
+            android:icon="@drawable/share"
+            android:title="Share App" />
+        <item
+            android:id="@+id/rateus"
+            android:icon="@drawable/rate"
+            android:title="Rate our App" />
+        <item
+            android:id="@+id/aboutus"
+            android:visible="false"
+            android:icon="@drawable/information"
+            android:title="About us" />
+        <item
+            android:id="@+id/privacypolicy"
+            android:visible="false"
+            android:icon="@drawable/information"
+            android:title="Privacy Policy" />
+    </group>
+</menu>

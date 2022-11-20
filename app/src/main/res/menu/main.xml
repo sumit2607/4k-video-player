@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/searchBar"
+        app:showAsAction="always"
+        android:title=""
+        android:icon="@drawable/search"
+        android:iconTint="?attr/textcolor"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        />
+    <item
+        android:id="@+id/lockmedia"
+        android:icon="@drawable/incognito"
+        android:title=""
+        android:iconTint="?attr/textcolor"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/sorting"
+        app:showAsAction="always"
+        android:title=""
+        android:visible="false"
+        android:iconTint="?attr/textcolor"
+        android:icon="@drawable/group_213"
+
+        />
+
+
+</menu>

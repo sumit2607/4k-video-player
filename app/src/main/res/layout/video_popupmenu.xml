@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingRight="20dp"
+        android:paddingLeft="22dp"
+
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/md_falcon_500_75"
+            android:id="@+id/title"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="24dp"
+            android:text=" name"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/play"
+            android:drawablePadding="16dp"
+            android:layout_marginBottom="15dp"
+            android:drawableTint="@color/md_falcon_500"
+            android:textColor="@color/md_falcon_500"
+            android:drawableLeft="@android:drawable/ic_media_play"
+            android:text="Play"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/lock"
+            android:layout_marginBottom="15dp"
+            android:drawablePadding="16dp"
+            android:textColor="@color/md_falcon_500"
+            android:drawableTint="@color/md_falcon_500"
+            android:drawableLeft="@android:drawable/ic_lock_lock"
+            android:text="Lock"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/favorite"
+            android:drawablePadding="16dp"
+            android:layout_marginBottom="15dp"
+            android:drawableTint="@color/md_falcon_500"
+
+            android:textColor="@color/md_falcon_500"
+            android:drawableLeft="@android:drawable/ic_menu_add"
+            android:text="Favorite"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/cut_video"
+            android:drawablePadding="16dp"
+            android:layout_marginBottom="15dp"
+            android:drawableTint="@color/md_falcon_500"
+            android:textColor="@color/md_falcon_500"
+            android:drawableLeft="@android:drawable/ic_menu_edit"
+            android:text="Cut Video"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/share"
+            android:drawablePadding="16dp"
+            android:layout_marginBottom="15dp"
+            android:drawableTint="@color/md_falcon_500"
+            android:textColor="@color/md_falcon_500"
+            android:drawableLeft="@android:drawable/ic_menu_share"
+            android:text="Share"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/rename"
+            android:drawablePadding="16dp"
+            android:layout_marginBottom="15dp"
+            android:drawableTint="@color/md_falcon_500"
+            android:textColor="@color/md_falcon_500"
+            android:drawableLeft="@android:drawable/ic_menu_edit"
+            android:text="Rename"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/delete"
+            android:drawablePadding="16dp"
+            android:layout_marginBottom="15dp"
+            android:drawableTint="@color/md_falcon_500"
+            android:textColor="@color/md_falcon_500"
+            android:drawableLeft="@android:drawable/ic_menu_delete"
+            android:text="Delete"/>
+
+        <TextView
+            android:id="@+id/details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:drawableLeft="@android:drawable/ic_menu_info_details"
+            android:drawablePadding="16dp"
+            android:drawableTint="@color/md_falcon_500"
+            android:text="Details"
+            android:textColor="@color/md_falcon_500"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

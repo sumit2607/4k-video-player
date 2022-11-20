@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:clickable="true">
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       >
+
+        <ImageView
+            android:id="@+id/img_video_cover"
+            android:layout_width="fill_parent"
+            android:layout_height="280.0dip"
+            android:background="@color/colorPrimary"
+            android:clickable="true"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/img_play_video"
+            android:layout_width="60.0dip"
+            android:layout_height="60.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="110.0dip"
+            android:adjustViewBounds="true"
+            android:alpha="0.4"
+            android:clickable="false"
+            android:src="@drawable/btn_dl_resume" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/img_video_cover"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0.0dip"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12.0dip"
+                android:paddingTop="8.0dip"
+                android:paddingRight="12.0dip"
+                android:paddingBottom="50.0dip">
+
+                <TextView
+                    android:id="@+id/lbl_file_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:text="File Name"
+                    android:textColor="@color/genre"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/lbl_file_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lbl_file_title"
+                    android:layout_marginTop="10.0dip"
+                    android:text="5 MB"
+                    android:textColor="@color/genre"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/lbl_file_created"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lbl_file_title"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10.0dip"
+                    android:text="1 Jan 2016 00:00 PM"
+                    android:textColor="@color/genre"
+                    android:textSize="15.0sp" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fabWrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom|center"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginBottom="12.0dip">
+
+        <com.demo.mxplayer.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom|center"
+            android:layout_marginBottom="55.0dip"
+            android:src="@drawable/btn_dl_resume"
+            android:visibility="invisible"
+            app:backgroundTint="@color/colorFabDownload"
+            app:fabSize="mini" />
+
+        <com.demo.mxplayer.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom|center"
+            android:layout_marginBottom="110.0dip"
+            android:src="@drawable/menu_share"
+            android:visibility="invisible"
+            app:backgroundTint="@color/colorFabReload"
+            app:fabSize="mini" />
+
+        <com.demo.mxplayer.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_redownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom|center"
+            android:layout_marginBottom="170.0dip"
+            android:src="@drawable/browser_reload_normal"
+            android:visibility="invisible"
+            app:backgroundTint="@color/colorFabBack"
+            app:fabSize="mini" />
+    </FrameLayout>
+</FrameLayout>

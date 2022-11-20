@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundcolor"
+    tools:context=".activity.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        app:titleTextColor="?attr/textcolor"
+
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/backgroundcolor"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:id="@+id/twodp"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/shadow"/>
+
+    <FrameLayout
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigation"
+        android:layout_below="@+id/twodp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    </FrameLayout>
+
+    <com.demo.mxplayer.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/multiple_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/navigation"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right|bottom"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        app:fab_addButtonColorNormal="?attr/colorPrimary"
+        app:fab_addButtonColorPressed="@color/white"
+        app:fab_addButtonPlusIconColor="@color/white"
+        app:fab_labelStyle="@style/menu_labels_style">
+
+        <com.demo.mxplayer.floatingactionbutton.FloatingActionButton
+            android:id="@+id/downloadlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/white"
+            app:fab_icon="@drawable/icons_list"
+            app:fab_title="Download List" />
+
+        <com.demo.mxplayer.floatingactionbutton.FloatingActionButton
+            android:id="@+id/nowdownloading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/white"
+            app:fab_icon="@drawable/icons_list"
+            app:fab_title="Now Downloading" />
+
+        <com.demo.mxplayer.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/white"
+            app:fab_icon="@android:drawable/ic_input_add"
+            app:fab_title="Add URL" />
+    </com.demo.mxplayer.floatingactionbutton.FloatingActionsMenu>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bottomnavigation"
+        app:itemIconTint="@drawable/bottomnavigationenable"
+        app:itemTextColor="@drawable/bottomnavigationenable"
+        app:menu="@menu/bottom_navigation" />
+
+</RelativeLayout>

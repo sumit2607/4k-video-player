@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?attr/backgroundcolor"
+    android:clickable="true">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_download_detail_multithread"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+ android:clickable="true"
+        android:visibility="visible">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/ll_button_wrapper"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0.0dip"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/lbl_overall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:text="@string/string_download_progress"
+                    android:textColor="@android:color/black"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lbl_overall_per"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="15.0dip"
+                    android:text="100%"
+                    android:textColor="@android:color/black"
+                    android:textSize="16.0sp" />
+
+                <View
+                    android:id="@+id/view_seprator1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_below="@+id/lbl_overall"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:background="@color/year" />
+
+                <TextView
+                    android:id="@+id/lbl_overall_bytes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_seprator1"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:text="--"
+                    android:textColor="@color/genre"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:id="@+id/lbl_download_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_seprator1"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:text="00 KB/s"
+                    android:textColor="@color/genre"
+                    android:textSize="14.0sp" />
+
+                <ProgressBar
+                    android:id="@+id/progress_overall"
+                    style="?android:progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lbl_download_speed"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:progress="0" />
+
+                <TextView
+                    android:id="@+id/lbl_thread_detail_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/progress_overall"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:text="@string/string_download_parts"
+                    android:textColor="@android:color/black"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/view_seprator2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_below="@+id/lbl_thread_detail_title"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:background="@color/year" />
+
+                <TextView
+                    android:id="@+id/lbl_thread_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_seprator2"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="18.0dip"
+                    android:text="@string/string_download_part_1"
+                    android:textColor="@android:color/black"
+                    android:textSize="12.0sp" />
+
+                <TextView
+                    android:id="@+id/lbl_thread_1_per"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_seprator2"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="18.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:text="100%"
+                    android:textColor="@color/genre"
+                    android:textSize="12.0sp" />
+
+                <ProgressBar
+                    android:id="@+id/progress_thread_1"
+                    style="?android:progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lbl_thread_1_per"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:progress="0" />
+
+                <TextView
+                    android:id="@+id/lbl_thread_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/progress_thread_1"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:text="@string/string_download_part_2"
+                    android:textColor="@android:color/black"
+                    android:textSize="12.0sp" />
+
+                <TextView
+                    android:id="@+id/lbl_thread_2_per"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/progress_thread_1"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="8.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:text="100%"
+                    android:textColor="@color/genre"
+                    android:textSize="12.0sp" />
+
+                <ProgressBar
+                    android:id="@+id/progress_thread_2"
+                    style="?android:progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lbl_thread_2_per"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:progress="0" />
+
+                <TextView
+                    android:id="@+id/lbl_thread_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/progress_thread_2"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:text="@string/string_download_part_3"
+                    android:textColor="@android:color/black"
+                    android:textSize="12.0sp" />
+
+                <TextView
+                    android:id="@+id/lbl_thread_3_per"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/progress_thread_2"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="8.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:text="100%"
+                    android:textColor="@color/genre"
+                    android:textSize="12.0sp" />
+
+                <ProgressBar
+                    android:id="@+id/progress_thread_3"
+                    style="?android:progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lbl_thread_3_per"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:progress="0" />
+
+                <TextView
+                    android:id="@+id/lbl_thread_info_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/progress_thread_3"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:text="@string/string_info"
+                    android:textColor="@android:color/black"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/view_seprator_4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_below="@+id/lbl_thread_info_title"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:background="@color/year" />
+
+                <ImageButton
+                    android:id="@+id/btn_m_copy"
+                    android:layout_width="24.0dip"
+                    android:layout_height="24.0dip"
+                    android:layout_below="@+id/view_seprator_4"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="12.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:src="@drawable/icon_copy" />
+
+                <EditText
+                    android:id="@+id/lbl_m_url"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_seprator_4"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:layout_toLeftOf="@+id/btn_m_copy"
+                    android:drawableLeft="@drawable/icon_web_url"
+                    android:drawablePadding="5.0dip"
+                    android:inputType="textWebEmailAddress"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:paddingLeft="3.0dip"
+                    android:textSize="15.0sp" />
+
+                <EditText
+                    android:id="@+id/lbl_m_path"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lbl_m_url"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="6.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:drawableLeft="@drawable/action_browse"
+                    android:drawablePadding="5.0dip"
+                    android:editable="false"
+                    android:inputType="textWebEmailAddress"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:paddingLeft="3.0dip"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/lbl_m_datetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lbl_m_path"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="14.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:drawableLeft="@drawable/icon_calender"
+                    android:drawablePadding="5.0dip"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:paddingLeft="3.0dip"
+                    android:text="1 Jan 2018"
+                    android:textColor="@android:color/black"
+                    android:textSize="15.0sp" />
+            </RelativeLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/ll_button_wrapper"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_multi_download_info"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:drawableLeft="@drawable/download_info"
+                android:drawablePadding="5.0dip"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="15.0dip"
+                android:text="@string/string_info"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15.0sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_multi_download_pause_resume"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/btn_multi_download_info"
+                android:drawableLeft="@drawable/download_resume"
+                android:drawablePadding="5.0dip"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="15.0dip"
+                android:text="@string/string_pause"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15.0sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_multi_download_delete"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/btn_multi_download_info"
+                android:drawableLeft="@drawable/download_delete"
+                android:drawablePadding="5.0dip"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="15.0dip"
+                android:text="@string/string_delete"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15.0sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_download_detail_singlethread"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="?actionBarSize"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/lbl_single_overall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginTop="15.0dip"
+            android:layout_marginBottom="10.0dip"
+            android:layout_toLeftOf="@+id/lbl_single_per"
+            android:text="@string/string_download_progress"
+            android:textColor="@android:color/black"
+            android:textSize="16.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lbl_single_per"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="15.0dip"
+            android:textColor="@android:color/black"
+            android:textSize="16.0sp" />
+
+        <View
+            android:id="@+id/view_seprator3"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_below="@+id/lbl_single_overall"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@color/year" />
+
+        <TextView
+            android:id="@+id/lbl_download_speed_single"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_seprator3"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginTop="12.0dip"
+            android:text="00 KB/s"
+            android:textColor="@color/genre"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/lbl_single_completed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_seprator3"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12.0dip"
+            android:layout_marginRight="15.0dip"
+            android:gravity="right"
+            android:text="--"
+            android:textColor="@color/genre"
+            android:textSize="14.0sp" />
+
+        <ProgressBar
+            android:id="@+id/progress_single"
+            style="?android:progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_download_speed_single"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginRight="15.0dip"
+            android:indeterminate="true" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/lbl_single_download_info"
+            android:layout_below="@+id/progress_single"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip">
+
+            <TextView
+                android:id="@+id/lbl_s_thread_info_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/string_info"
+                android:textColor="@android:color/black"
+                android:textSize="16.0sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view_seprator_5"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_below="@+id/lbl_s_thread_info_title"
+                android:layout_marginTop="8.0dip"
+                android:background="@color/year" />
+
+            <ImageButton
+                android:id="@+id/btn_s_copy"
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:layout_below="@+id/view_seprator_5"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12.0dip"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/icon_copy" />
+
+            <EditText
+                android:id="@+id/lbl_s_url"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_seprator_5"
+                android:layout_marginTop="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_toLeftOf="@+id/btn_s_copy"
+                android:drawableLeft="@drawable/icon_web_url"
+                android:drawablePadding="5.0dip"
+                android:editable="false"
+                android:inputType="textWebEmailAddress"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingLeft="3.0dip"
+                android:textSize="15.0sp" />
+
+            <EditText
+                android:id="@+id/lbl_s_path"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_s_url"
+                android:layout_marginTop="6.0dip"
+                android:drawableLeft="@drawable/action_browse"
+                android:drawablePadding="5.0dip"
+                android:editable="false"
+                android:inputType="textWebEmailAddress"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingLeft="3.0dip"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/lbl_s_datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_s_path"
+                android:layout_marginTop="14.0dip"
+                android:drawableLeft="@drawable/icon_calender"
+                android:drawablePadding="5.0dip"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingLeft="3.0dip"
+                android:text="1 Jan 2018"
+                android:textColor="@android:color/black"
+                android:textSize="15.0sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/lbl_single_download_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_single_button_wrapper"
+            android:padding="15.0dip"
+            android:text="@string/string_single_thread_explain"
+            android:textColor="#ff000000"
+            android:textSize="14.0sp" />
+
+        <RelativeLayout
+            android:id="@+id/ll_single_button_wrapper"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/colorPrimaryDark">
+
+            <View
+                android:id="@+id/view_sep_1"
+                android:layout_width="10.0dip"
+                android:layout_height="1.0dip"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/btn_single_download_info"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/view_sep_1"
+                android:drawableLeft="@drawable/download_info"
+                android:drawablePadding="5.0dip"
+                android:paddingLeft="20.0dip"
+                android:paddingRight="20.0dip"
+                android:text="Info"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15.0sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_single_download_delete"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/view_sep_1"
+                android:drawableLeft="@drawable/download_delete"
+                android:drawablePadding="5.0dip"
+                android:paddingLeft="20.0dip"
+                android:paddingRight="20.0dip"
+                android:text="Delete"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15.0sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

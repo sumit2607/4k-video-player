@@ -1,0 +1,6 @@
+# ninja log v5
+1	890	675001845	CMakeFiles/hello-jni.dir/hello-jni.c.o	ae9caa8eded0f6fa
+891	1805	675001846	D:/2022/Codecanyom/MAXplayer/app/build/intermediates/cmake/debug/obj/arm64-v8a/libhello-jni.so	9ded41ccb7b9d64c
+0	33	0	clean	fa2febc325648e13
+2	737	675002033	CMakeFiles/hello-jni.dir/hello-jni.c.o	ae9caa8eded0f6fa
+737	1254	675002034	D:/2022/Codecanyom/MAXplayer/app/build/intermediates/cmake/debug/obj/arm64-v8a/libhello-jni.so	9ded41ccb7b9d64c

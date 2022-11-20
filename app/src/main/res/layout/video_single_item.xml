@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:id="@+id/maincolor"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+
+        android:weightSum="10"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/clickevent"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/video_thumb"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_launcher"
+                        app:riv_corner_radius="15dp" >
+                    </com.makeramen.roundedimageview.RoundedImageView>
+                    <TextView
+                        android:id="@+id/foldertag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:visibility="gone"
+                        android:background="@color/md_red_500"
+                        android:layout_alignRight="@+id/video_thumb"
+                        android:text="New"
+                        android:textSize="10sp"
+                        android:textAlignment="gravity" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/video_title"
+                        android:textSize="15sp"
+                        android:text="SONG"
+                        android:textColor="?attr/textcolor"
+                        android:singleLine="true"
+                        android:ellipsize="marquee" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/video_duration"
+                        android:singleLine="true"
+                        android:textSize="12sp"
+                        android:textColor="?attr/textcolor"
+                        android:ellipsize="marquee"/>
+                    <com.demo.mxplayer.LineProgress.LineProgress
+                        android:id="@+id/line_progress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:background_stroke_width="2dp"
+                        app:progress="10"
+                        app:progress_color="?attr/colorPrimary"
+                        app:stroke_width="3dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/optiontag"
+            android:layout_weight="9">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/video_options"
+                android:tint="?attr/textcolor"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_more_vert_black_24dp"
+                tools:ignore="UseAppTint" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#dfdfdf"/>
+
+
+</LinearLayout>

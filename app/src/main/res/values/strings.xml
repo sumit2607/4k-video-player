@@ -1,0 +1,206 @@
+<resources>
+    <string name="app_name">Video Player Media All Format</string>
+    <string name="title_activity_main">Video Player</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Share</string>
+    <string name="ok">Ok</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="VideoView_error_button">OK</string>
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <string name="pref_header_notifications">Notifications</string>
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+    <string name="pref_title_ringtone">Ringtone</string>
+
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <string name="title_activity_setting">Settings</string>
+
+    <string name="button1_large_text" translatable="false">1</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="button2_large_text" translatable="false">2</string>
+
+    <string name="button2_small_text" translatable="false">ABC</string>
+
+    <string name="button3_large_text" translatable="false">3</string>
+    <string name="button3_small_text" translatable="false">DEF</string>
+
+    <string name="button4_large_text" translatable="false">4</string>
+    <string name="button4_small_text" translatable="false">GHI</string>
+
+
+    <string name="button5_large_text" translatable="false">5</string>
+    <string name="button5_small_text" translatable="false">JKL</string>
+    <string name="button6_large_text" translatable="false">6</string>
+    <string name="button6_small_text" translatable="false">MNO</string>
+    <string name="button7_large_text" translatable="false">7</string>
+    <string name="button7_small_text" translatable="false">PQRS</string>
+    <string name="button8_large_text" translatable="false">8</string>
+    <string name="button8_small_text" translatable="false">TUV</string>
+    <string name="button9_large_text" translatable="false">9</string>
+    <string name="button9_small_text" translatable="false">WXYZ</string>
+    <string name="button11_large_text" translatable="false">0</string>
+    <string name="pin_code_forgot_text">Forgot?</string>
+    <string name="pin_code_step_disable">Disable %d-digit Pincode</string>
+    <string name="pin_code_step_create">Create a %d-digit Pincode</string>
+    <string name="pin_code_step_change">Enter your current %d-digit Pincode</string>
+    <string name="pin_code_step_unlock">Enter your %d-digit Pincode</string>
+    <string name="pin_code_step_enable_confirm">Confirm your %d-digit Pincode</string>
+    <string name="pin_code_fingerprint_text">Fingerprint</string>
+
+    <string name="pin_code_fingerprint_success">Fingerprint recognized</string>
+    <string name="pin_code_fingerprint_not_recognized">Fingerprint not recognized. Try again</string>
+    <string name="video_player_url_empty">Please specify the address of the video playback</string>
+    <string name="small_problem">Player encountered a small problem</string>
+    <string name="can_not_play">can not play this video</string>
+    <string name="not_support">player not support this device</string>
+
+    <string name="error_generic">Playback failed</string>
+    <string name="error_instantiating_decoder">Unable to instantiate decoder %1$s</string>
+    <string name="error_no_decoder">This device does not provide a decoder for %1$s</string>
+
+
+    <string name="error_no_secure_decoder">This device does not provide a secure decoder for %1$s</string>
+    <string name="error_querying_decoders">Unable to query device decoders</string>
+    <string name="error_unrecognized_abr_algorithm">Unrecognized ABR algorithm</string>
+    <string name="error_unrecognized_stereo_mode">Unrecognized stereo mode</string>
+
+    <string name="error_unsupported_audio">Media includes audio tracks, but none are playable by this device</string>
+    <string name="error_unsupported_video">Media includes video tracks, but none are playable by this device</string>
+    <string name="storage_permission_denied">Permission to access storage was denied</string>
+    <string name="error_drm_not_supported">Protected content not supported on API levels below 18</string>
+    <string name="error_drm_unknown">An unknown DRM error occurred</string>
+    <string name="error_drm_unsupported_scheme">This device does not support the required DRM scheme</string>
+    <string name="download_start_error">Failed to start download</string>
+    <string name="notification_completed_title">Download Complete</string>
+    <string name="notification_file_completed_suffix">File downloading completed.</string>
+    <string name="string_authentication">Authentication</string>
+    <string name="string_close">Close</string>
+    <string name="string_connection_error">Error in connection, Error Code :</string>
+    <string name="string_create">Create</string>
+    <string name="string_create_bookmark_success">Bookmark created successfully</string>
+
+    <string name="string_delete">Delete</string>
+    <string name="string_download_part_1">Part 1 :</string>
+    <string name="string_download_part_2">Part 2 :</string>
+    <string name="string_download_part_3">Part 3 :</string>
+    <string name="string_download_parts">Download Parts</string>
+    <string name="string_download_progress">Download Progress</string>
+    <string name="string_download_url">Download URL</string>
+    <string name="string_enter_title">Enter Title</string>
+    <string name="string_enter_url">Enter URL</string>
+    <string name="string_file_delete_success">File has been deleted</string>
+    <string name="string_file_name">File Name</string>
+    <string name="string_file_not_found">File Not Found</string>
+    <string name="string_homepage_invalid_url_warning">Web address is invalid.</string>
+    <string name="string_no_download_found">Nothing Downloaded</string>
+    <string name="string_not_downloading_anything">Not Downloading Anything</string>
+    <string name="string_remove">Remove</string>
+    <string name="string_resume">Resume</string>
+    <string name="string_save_file_path">Save file path</string>
+    <string name="string_saveas">Save As</string>
+    <string name="string_select_app">Select Application</string>
+    <string name="string_settings_clear_download_details">Clear completed download list without removing files from storage.</string>
+    <string name="string_settings_clear_download_list">Clear download list</string>
+    <string name="string_settings_resume_checkbox">Resume all download when connected</string>
+    <string name="string_settings_resume_details">All file download will resume when device get active internet connection.</string>
+    <string name="string_single_thread_explain">Downloading with multiple parts, pause or resume download option is not available for this file as file hosting server don\'t allow it.</string>
+    <string name="string_start_download">Start Download</string>
+    <string name="string_status_completed">Completed</string>
+    <string name="string_status_created">Created</string>
+    <string name="string_status_downloading">Downloading</string>
+    <string name="string_status_paused">Paused</string>
+    <string name="string_unknown">Unknown</string>
+    <string name="string_url_copied">Url Copied</string>
+    <string name="string_username">Username</string>
+    <string name="string_wait_connecting">Please wait, while connecting...</string>
+    <string name="up_label">Up</string>
+    <string name="remove_history_details">Remove file from completed list? Check if you want to remove file from storage as well.</string>
+    <string name="remove_history_title">Remove from list</string>
+    <string name="downloader_background_service">Downloading Background Service</string>
+    <string name="dialog_youtube_not_allowed_details">Downloading video or any other resource from Youtube is not allowed from this application.</string>
+    <string name="dialog_youtube_not_allowed_title">Download Not Allowed</string>
+    <string name="string_ok">Ok</string>
+    <string name="string_no_internet">No Internet Connection</string>
+    <string name="drawer_menu_downloading">Downloading</string>
+    <string name="string_password">Password</string>
+    <string name="string_pause">Pause</string>
+    <string name="string_cancel">Cancel</string>
+    <string name="string_clear">Clear</string>
+    <string name="string_info">Info</string>
+    <string name="string_open">Open</string>
+    <string name="dialog_file_detail_delete_checkbox">Check if you want to delete file from storage.\10Remove from list?</string>
+    <string name="dialog_file_detail_completed_title">Remove &amp; Delete File</string>
+    <string name="dialog_file_detail_downloading_title">Stop &amp; Remove Download File</string>
+    <string name="dialog_file_detail_downloading_details">Are you sure, want to stop &amp; remove downloading file?</string>
+    <string name="string_no_app_found_to_open">No application found which can open file</string>
+    <string name="drawer_menu_completed">Completed</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="admob_native_id">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="admob_interstitial">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_appopen">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="admob_banner">ca-app-pub-3940256099942544/6300978111</string>
+
+</resources>

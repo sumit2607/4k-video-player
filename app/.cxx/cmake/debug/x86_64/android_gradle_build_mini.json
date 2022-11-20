@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "D:\\2022\\Codecanyom\\MAXplayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "D:\\sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
+    "D:\\sdk\\ndk\\21.1.6352462\\build\\cmake\\platforms.cmake"
+  ],
+  "cleanCommands": [
+    "D:\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\2022\\Codecanyom\\MAXplayer\\app\\.cxx\\cmake\\debug\\x86_64\" clean"
+  ],
+  "buildTargetsCommand": "D:\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"D:\\2022\\Codecanyom\\MAXplayer\\app\\.cxx\\cmake\\debug\\x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "hello-jni-Debug-x86_64": {
+      "artifactName": "hello-jni",
+      "buildCommand": "D:\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\2022\\Codecanyom\\MAXplayer\\app\\.cxx\\cmake\\debug\\x86_64\" hello-jni",
+      "abi": "x86_64",
+      "output": "D:\\2022\\Codecanyom\\MAXplayer\\app\\build\\intermediates\\cmake\\debug\\obj\\x86_64\\libhello-jni.so",
+      "runtimeFiles": []
+    }
+  }
+}

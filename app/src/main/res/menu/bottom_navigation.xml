@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/local"
+        android:icon="@drawable/folder_closed_black_shape"
+        android:title="Local" />
+    <item
+        android:id="@+id/nav_music"
+        android:icon="@drawable/headphones"
+        android:title="Music" />
+
+    <item
+        android:id="@+id/gallery"
+        android:iconTint="#cccccc"
+        android:icon="@drawable/gallery"
+        android:title="Gallery" />
+</menu>

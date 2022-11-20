@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="24.0dip"
+    android:paddingTop="24.0dip"
+    android:paddingRight="24.0dip"
+    android:paddingBottom="8.0dip">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/lbl_file_detail_file_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="left"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@android:color/black"
+            android:textSize="20.0sp"
+            android:textStyle="bold"
+            tools:ignore="EllipsizeMaxLines" />
+
+        <ImageButton
+            android:id="@+id/btn_file_detail_copy_url"
+            android:layout_width="24.0dip"
+            android:layout_height="24.0dip"
+            android:layout_below="@+id/lbl_file_detail_file_title"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="28.0dip"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/icon_copy" />
+
+        <EditText
+            android:id="@+id/lbl_file_detail_url"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_file_detail_file_title"
+            android:layout_marginTop="20.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_toLeftOf="@+id/btn_file_detail_copy_url"
+            android:drawableLeft="@drawable/icon_web_url"
+            android:drawablePadding="5.0dip"
+            android:editable="false"
+            android:inputType="textWebEmailAddress"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingLeft="3.0dip"
+            android:textSize="15.0sp" />
+
+        <EditText
+            android:id="@+id/lbl_file_detail_path"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_file_detail_url"
+            android:layout_marginTop="6.0dip"
+            android:drawableLeft="@drawable/action_browse"
+            android:drawablePadding="5.0dip"
+            android:editable="false"
+            android:inputType="textWebEmailAddress"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingLeft="3.0dip"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:id="@+id/lbl_file_detail_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_file_detail_path"
+            android:layout_marginTop="10.0dip"
+            android:drawableLeft="@drawable/icon_info"
+            android:drawablePadding="5.0dip"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingLeft="3.0dip"
+            android:text="Downloading"
+            android:textColor="@android:color/black"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:id="@+id/lbl_file_detail_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_file_detail_status"
+            android:layout_marginTop="10.0dip"
+            android:drawableLeft="@drawable/icon_file_size"
+            android:drawablePadding="5.0dip"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingLeft="3.0dip"
+            android:text="5 MB"
+            android:textColor="@android:color/black"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:id="@+id/lbl_file_detail_datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_file_detail_size"
+            android:layout_marginTop="14.0dip"
+            android:drawableLeft="@drawable/icon_calender"
+            android:drawablePadding="5.0dip"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingLeft="3.0dip"
+            android:text="1 Jan 2018"
+            android:textColor="@android:color/black"
+            android:textSize="15.0sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_alert_button_wrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_file_detail_datetime"
+            android:layout_alignParentRight="true"
+            android:gravity="right">
+
+            <Button
+                android:id="@+id/btn_file_detail_open"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:text="@string/string_open"
+                android:textSize="14.0sp" />
+
+            <Button
+                android:id="@+id/btn_file_detail_cancel"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:text="@string/string_cancel"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_file_detail_delete"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_file_detail_datetime"
+            android:layout_marginTop="15.0dip"
+            android:layout_toLeftOf="@+id/rl_alert_button_wrapper"
+            android:text="@string/string_delete"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+</LinearLayout>

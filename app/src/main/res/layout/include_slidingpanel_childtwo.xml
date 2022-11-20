@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="?attr/backgroundcolor"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="140dp">
+        <FrameLayout
+            android:id="@+id/adsvisible"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true">
+
+            <RelativeLayout
+                android:id="@+id/adMobView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center" />
+        </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="195dp"
+                android:layout_height="197dp"
+                android:background="@drawable/shadowplayercricle">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/playwhitecricle"
+                    android:layout_marginBottom="7dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/track_images"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/smallplaycricle"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+           android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/songTitles"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:textColor="?attr/textcolor"
+                android:singleLine="true"
+                android:ellipsize="marquee" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewArtistNames"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="?attr/textcolor"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:ellipsize="marquee"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/addto">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="+  Add to"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_palyLayout"
+        android:layout_alignParentBottom="true"
+
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:weightSum="2.0">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/starttimes"
+                    android:textColor="?attr/textcolor"
+                    android:hint="00.00"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/endtimes"
+                    android:textColor="?attr/textcolor"
+                    android:hint="04.00"
+                    android:gravity="center|right"
+                    android:layout_marginRight="15dp"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBar2"
+                android:thumb="@drawable/seekthumbcustom"
+                android:progressTint="?attr/colorPrimary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:weightSum="10.0"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.0"
+                android:gravity="center|right"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/btn_suffel"
+                    android:layout_width="33dp"
+                    android:layout_height="27dp"
+                    android:layout_marginRight="23dp"
+                    android:background="@drawable/bar_selector_white"
+                    android:src="@drawable/ic_shuffle_dark" />
+
+                <ImageView
+                    android:id="@+id/buttonPrevious2"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+
+                    android:background="@drawable/ic_skip_previous_one" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.0"
+                android:gravity="center"
+                android:orientation="horizontal">
+<RelativeLayout
+    android:layout_width="75dp"
+    android:layout_height="75dp"
+    android:background="@drawable/shadowone">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/playbgcricle">
+                    <ImageButton
+                        android:id="@+id/buttonPlayPause2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerInParent="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/app_name"
+                        app:srcCompat="@drawable/ic_play_one"
+                        />
+                </RelativeLayout>
+
+</RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.0"
+                android:gravity="center|left"
+               android:layout_marginLeft="15dp"
+
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/buttonNext2"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                   android:layout_marginRight="23dp"
+                    android:background="@drawable/bar_selector_white"
+                    app:srcCompat="@drawable/ic_skip_next_one" />
+
+                <ImageView
+                    android:id="@+id/btn_toggle"
+                    android:layout_width="33dp"
+                    android:layout_height="27dp"
+                    android:background="@drawable/bar_selector_white"
+                    android:gravity="center_vertical|right"
+                    android:src="@drawable/ic_selector_repeat" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

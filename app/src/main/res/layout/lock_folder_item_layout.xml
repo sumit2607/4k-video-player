@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="?attr/backgroundcolor"
+        android:weightSum="10"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/clickevent"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="15dp">
+                    <TextView
+                        android:id="@+id/foldertag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:visibility="gone"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/numbercricletred"
+                        android:text="10"
+                        android:textSize="10sp"
+                        android:textAlignment="gravity" />
+                    <RelativeLayout
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:gravity="center"
+                        android:id="@+id/main"
+                        android:background="@drawable/cruvecriclesongbg">
+                        <ImageView
+                            android:id="@+id/video_thumb"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:layout_centerInParent="true"
+                            android:scaleType="fitXY"
+                            android:backgroundTint="?attr/colorPrimary"
+                            android:background="@drawable/path51"  />
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/folder_title"
+                        android:textSize="15sp"
+                        android:text="Folder Name"
+                        android:textColor="@android:color/black"
+                        android:singleLine="true"
+                        android:ellipsize="marquee" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvTotalVideosCount"
+                        android:singleLine="true"
+                        android:textSize="12sp"
+                        android:text="total"
+                        android:ellipsize="marquee"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/video_options"
+                android:tint="@android:color/black"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_more_vert_black_24dp"
+                tools:ignore="UseAppTint" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#dfdfdf"/>
+
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Drop Shadow Stack -->
+    <item>
+        <shape android:shape="oval">
+            <padding
+                android:top="1dp"
+                android:bottom="1dp"
+                android:left="1dp"
+                android:right="1dp"
+                />
+
+            <solid android:color="#00CCCCCC" />
+
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <padding
+                android:top="1.2dp"
+                android:bottom="1.2dp"
+                android:left="1.2dp"
+                android:right="1.2dp"
+                />
+
+            <solid android:color="#10CCCCCC" />
+
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <padding
+                android:top="1.3dp"
+                android:bottom="1.3dp"
+                android:left="1.3dp"
+                android:right="1.3dp"
+                />
+
+            <solid android:color="#20CCCCCC" />
+
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <padding
+                android:top="1.4dp"
+                android:bottom="1.4dp"
+                android:left="1.4dp"
+                android:right="1.4dp"
+                />
+
+            <solid android:color="#30CCCCCC" />
+
+        </shape>
+    </item>
+
+    <!-- Background -->
+    <item>
+        <shape android:shape="oval"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="?attr/colorPrimary"/>
+            <stroke android:color="@android:color/white" android:width="2.5dp"/>
+            <size android:width="20dp" android:height="20dp"/>
+        </shape>
+    </item>
+
+</layer-list>
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+
+
+
+    <TextView
+        android:id="@+id/textdec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+
+        android:drawablePadding="5dp"
+        android:text="Do you wish to resume from where you stopped?"
+        android:textSize="@dimen/primary_text_size"
+        android:textIsSelectable="true"
+        android:textAlignment="viewStart"
+
+        android:gravity="start" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/textdec"
+        android:text="Use by Default"/>
+        <TextView
+            android:id="@+id/startover"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkbox"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8.0dip"
+            android:textColor="?attr/colorPrimary"
+            android:text="START OVER"
+            android:textSize="14.0sp" />
+
+    <TextView
+        android:id="@+id/resume"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkbox"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="40dp"
+        android:layout_toLeftOf="@+id/btn_start_download"
+        android:text="RESUME"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="14.0sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/play"
+        android:icon="@android:drawable/ic_media_play"
+        android:visible="false"
+        android:title="Play" />
+    <item
+        android:id="@+id/lock"
+        android:icon="@android:drawable/ic_lock_lock"
+        android:visible="false"
+        android:title="Lock" />
+    <item
+        android:id="@+id/favorite"
+        android:icon="@drawable/selector_favorite"
+        android:visible="false"
+        android:title="Favorite" />
+    <item
+        android:id="@+id/cut_video"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:visible="false"
+        android:title="Cut Video" />
+    <item
+        android:id="@+id/delete"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="Delete" />
+
+    <item
+        android:id="@+id/rename"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:visible="false"
+        android:title="Rename" />
+
+    <item
+        android:id="@+id/details"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="Details" />
+</menu>

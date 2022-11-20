@@ -1,0 +1,43 @@
+{
+  "stringTable": {
+    "0": "/Users/sumitrai/Downloads/Video Player Media All Format/MAXplayer/app/.cxx/cmake/debug/x86",
+    "1": "--target=i686-none-linux-android19 --gcc-toolchain=/Users/sumitrai/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/sumitrai/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dhello_jni_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC"
+  },
+  "buildFiles": [
+    "/Users/sumitrai/Downloads/Video Player Media All Format/MAXplayer/app/src/main/cpp/CMakeLists.txt",
+    "/Users/sumitrai/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+    "/Users/sumitrai/Library/Android/sdk/ndk/21.1.6352462/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/Users/sumitrai/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/sumitrai/Downloads/Video Player Media All Format/MAXplayer/app/.cxx/cmake/debug/x86\" clean"
+  ],
+  "buildTargetsCommand": "/Users/sumitrai/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/sumitrai/Downloads/Video Player Media All Format/MAXplayer/app/.cxx/cmake/debug/x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "hello-jni-Debug-x86": {
+      "buildCommand": "/Users/sumitrai/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/sumitrai/Downloads/Video Player Media All Format/MAXplayer/app/.cxx/cmake/debug/x86\" hello-jni",
+      "buildType": "debug",
+      "toolchain": "1591331219",
+      "abi": "x86",
+      "artifactName": "hello-jni",
+      "files": [
+        {
+          "src": "/Users/sumitrai/Downloads/Video Player Media All Format/MAXplayer/app/src/main/cpp/hello-jni.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/Users/sumitrai/Downloads/Video Player Media All Format/MAXplayer/app/build/intermediates/cmake/debug/obj/x86/libhello-jni.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "1591331219": {
+      "cCompilerExecutable": "/Users/sumitrai/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}

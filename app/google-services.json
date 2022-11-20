@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "586956947129",
+    "project_id": "fir-maxplayer",
+    "storage_bucket": "fir-maxplayer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586956947129:android:7c8eae64869e7a65c4a568",
+        "android_client_info": {
+          "package_name": "com.demo.mxplayer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586956947129-hef8a64snc4he91fc1t43humturq9f20.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH8Jk1AHEqWasWhuO7PjyfP578KJ1Ahzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "586956947129-hef8a64snc4he91fc1t43humturq9f20.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

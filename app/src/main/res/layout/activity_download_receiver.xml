@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:minWidth="300.0dip"
+    android:orientation="vertical"
+    android:paddingLeft="24.0dip"
+    android:paddingTop="24.0dip"
+    android:paddingRight="24.0dip"
+    android:paddingBottom="8.0dip">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:singleLine="true"
+        android:text="@string/app_name"
+        android:textColor="@android:color/black"
+        android:textSize="20.0sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.0dip"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0.0dip"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/rl_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">>
+
+            <EditText
+                android:id="@+id/lbl_download_url"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                android:layout_marginBottom="2.0dip"
+                android:layout_toLeftOf="@+id/btn_url_paste"
+                android:drawableLeft="@drawable/icon_web_url"
+                android:drawablePadding="5.0dip"
+                android:hint="@string/string_download_url"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="14.0sp" />
+
+            <ImageButton
+                android:id="@+id/btn_url_paste"
+                android:layout_width="38.0dip"
+                android:layout_height="38.0dip"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/action_paste" />
+
+            <LinearLayout
+                android:id="@+id/ll_auth_wrapper"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_download_url"
+                android:layout_marginTop="5.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8.0dip"
+                    android:layout_marginBottom="6.0dip"
+                    android:text="@string/string_authentication"
+                    android:textColor="#ff000000"
+                    android:textSize="16.0sp" />
+
+                <EditText
+                    android:id="@+id/txt_auth_username"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:drawableLeft="@drawable/icon_user"
+                    android:drawablePadding="5.0dip"
+                    android:hint="@string/string_username"
+                    android:inputType="textWebEmailAddress"
+                    android:textSize="14.0sp" />
+
+                <EditText
+                    android:id="@+id/txt_auth_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:drawableLeft="@drawable/icon_password"
+                    android:drawablePadding="5.0dip"
+                    android:hint="@string/string_password"
+                    android:inputType="textPassword"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_filesaveas_wrapper"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_auth_wrapper"
+                android:layout_marginTop="5.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8.0dip">
+
+                    <TextView
+                        android:id="@+id/lbl_save_as_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8.0dip"
+                        android:layout_marginBottom="6.0dip"
+                        android:text="@string/string_saveas"
+                        android:textColor="#ff000000"
+                        android:textSize="16.0sp" />
+
+                    <ImageButton
+                        android:id="@+id/btn_select_save_path"
+                        android:layout_width="38.0dip"
+                        android:layout_height="38.0dip"
+                        android:layout_below="@+id/lbl_save_as_title"
+                        android:layout_alignParentRight="true"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:src="@drawable/icon_folder_open"
+                        android:text="Browse" />
+
+                    <EditText
+                        android:id="@+id/lbl_file_save_path"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lbl_save_as_title"
+                        android:layout_marginBottom="8.0dip"
+                        android:layout_toLeftOf="@+id/btn_select_save_path"
+                        android:drawableLeft="@drawable/action_browse"
+                        android:drawablePadding="5.0dip"
+                        android:hint="@string/string_save_file_path"
+                        android:inputType="textWebEmailAddress"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingLeft="3.0dip"
+                        android:textColor="@android:color/black"
+                        android:textSize="14.0sp" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/txt_save_filename"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8.0dip"
+                    android:drawableLeft="@drawable/icon_file"
+                    android:drawablePadding="5.0dip"
+                    android:hint="@string/string_file_name"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_file_size_wrapper"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_filesaveas_wrapper"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lbl_download_file_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:drawableLeft="@drawable/icon_file_size"
+                    android:drawablePadding="5.0dip"
+                    android:gravity="center_vertical"
+                    android:text="100 MB"
+                    android:textColor="@android:color/black"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/progress_get_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_file_size_wrapper"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12.0dip"
+                android:layout_marginBottom="12.0dip"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ProgressBar
+                    style="?android:progressBarStyleSmall"
+                    android:layout_width="32.0dip"
+                    android:layout_height="32.0dip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8.0dip"
+                    android:text="@string/string_wait_connecting"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_start_download"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progress_get_info"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8.0dip"
+                android:text="@string/string_start_download"
+                android:textSize="14.0sp" />
+
+            <Button
+                android:id="@+id/btn_cancel_download"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progress_get_info"
+                android:layout_marginTop="8.0dip"
+                android:layout_toLeftOf="@+id/btn_start_download"
+                android:text="@string/string_cancel"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

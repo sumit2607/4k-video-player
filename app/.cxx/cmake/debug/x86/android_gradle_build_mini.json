@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "/Users/sumitrai/Downloads/Video Player Media All Format/MAXplayer/app/src/main/cpp/CMakeLists.txt",
+    "/Users/sumitrai/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+    "/Users/sumitrai/Library/Android/sdk/ndk/21.1.6352462/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/Users/sumitrai/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/sumitrai/Downloads/Video Player Media All Format/MAXplayer/app/.cxx/cmake/debug/x86\" clean"
+  ],
+  "buildTargetsCommand": "/Users/sumitrai/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/sumitrai/Downloads/Video Player Media All Format/MAXplayer/app/.cxx/cmake/debug/x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "hello-jni-Debug-x86": {
+      "artifactName": "hello-jni",
+      "buildCommand": "/Users/sumitrai/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/sumitrai/Downloads/Video Player Media All Format/MAXplayer/app/.cxx/cmake/debug/x86\" hello-jni",
+      "abi": "x86",
+      "output": "/Users/sumitrai/Downloads/Video Player Media All Format/MAXplayer/app/build/intermediates/cmake/debug/obj/x86/libhello-jni.so",
+      "runtimeFiles": []
+    }
+  }
+}

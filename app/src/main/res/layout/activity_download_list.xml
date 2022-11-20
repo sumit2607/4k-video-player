@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="?attr/backgroundcolor"
+
+ >
+
+    <ListView
+        android:id="@+id/list_download_history"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1.0dip"
+        android:listSelector="@drawable/list_row_selector" />
+    <TextView
+        android:id="@+id/lbl_no_item_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Not Found"
+        android:textColor="@android:color/black"
+        android:textSize="18.0sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

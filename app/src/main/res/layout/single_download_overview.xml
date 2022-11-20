@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/list_row_selector"
+    android:clickable="true"
+    android:padding="8.0dip">
+
+    <RelativeLayout
+        android:id="@+id/rl_btn_wrapper"
+        android:layout_width="96.0dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <ImageButton
+            android:id="@+id/btn_dl_info"
+            android:layout_width="36.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4.0dip"
+            android:layout_marginRight="4.0dip"
+            android:adjustViewBounds="true"
+            android:background="?selectableItemBackgroundBorderless"
+            android:paddingLeft="4.0dip"
+            android:paddingRight="4.0dip"
+            android:src="@drawable/icon_info" />
+
+        <ImageButton
+            android:id="@+id/btn_dl_pause_resume"
+            android:layout_width="36.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4.0dip"
+            android:layout_marginRight="4.0dip"
+            android:layout_toLeftOf="@+id/btn_dl_info"
+            android:adjustViewBounds="true"
+            android:background="?selectableItemBackgroundBorderless"
+            android:paddingLeft="4.0dip"
+            android:paddingRight="4.0dip"
+            android:src="@drawable/list_paus_button" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lbl_overview_file_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8.0dip"
+        android:layout_toLeftOf="@+id/rl_btn_wrapper"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="File Name"
+        android:textColor="@android:color/black"
+        android:textSize="14.0sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lbl_overview_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl_overview_file_name"
+        android:layout_marginTop="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:layout_toLeftOf="@+id/rl_btn_wrapper"
+        android:singleLine="true"
+        android:text="100%"
+        android:textColor="@color/genre"
+        android:textSize="12.0sp" />
+
+    <TextView
+        android:id="@+id/lbl_size_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="25.0dip"
+        android:layout_below="@+id/lbl_overview_file_name"
+        android:layout_marginTop="8.0dip"
+        android:text="100 kb / 500 kb"
+        android:textColor="@color/genre"
+        android:textSize="12.0sp" />
+
+    <ProgressBar
+        android:id="@+id/progress_overview"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl_overview_progress"
+        android:layout_marginTop="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:layout_toLeftOf="@+id/rl_btn_wrapper" />
+</RelativeLayout>
